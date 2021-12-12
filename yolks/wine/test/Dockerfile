@@ -34,6 +34,8 @@ RUN     apt install --install-recommends wine wine64 -y
 ## Configure locale
 RUN          update-locale lang=en_US.UTF-8 \
              && dpkg-reconfigure --frontend noninteractive locales
+	     
+CMD         [ "/bin/bash", "/home/container/update.sh" ]
 			 
 USER    container
 WORKDIR     /home/container
