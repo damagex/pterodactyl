@@ -10,36 +10,8 @@ RUN     dpkg --add-architecture i386
 RUN     apt update
 RUN     apt install -y --no-install-recommends gnupg2 software-properties-common libntlm0 winbind xvfb xauth python3 libncurses5:i386 libncurses6:i386 libgdiplus
 
-# Install winehq-stable and with recommends
-RUN     wget -nc https://dl.winehq.org/wine-builds/winehq.key
-RUN     apt-key add winehq.key
-RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullseye main'
-#RUN     apt update
-#RUN     wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11/Release.key | apt-key add -
-#RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
 RUN     apt update
-RUN     apt install -y winehq-devel cabextract
-RUN     apt install -y cpio
-RUN     apt install -y file
-RUN     apt install -y netcat-traditional
-RUN     apt install -y os-prober
-RUN     apt install -y busybox
-RUN     apt install -y python3-idna
-RUN     apt install -y lsof
-
-# Set up Winetricks
-RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-RUN     chmod +x /usr/sbin/winetricks
-
-ENV     HOME=/home/container
-ENV     WINEPREFIX=/home/container/.wine64
-ENV     WINEDLLOVERRIDES="mscoree,mshtml="
-ENV     DISPLAY=:0
-ENV     DISPLAY_WIDTH=1024
-ENV     DISPLAY_HEIGHT=768
-ENV     DISPLAY_DEPTH=16
-ENV     AUTO_UPDATE=1
-ENV     XVFB=0
+RUN     apt install wine64 -y
 
 USER    container
 WORKDIR	/home/container
