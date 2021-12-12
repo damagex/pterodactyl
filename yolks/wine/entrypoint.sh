@@ -2,7 +2,7 @@
 cd /home/container
 
 # Information output
-echo "Running on Debian $(cat /etc/debian_version)"
+echo "Running on Debian $(cat /proc/version)"
 echo "Current timezone: $(cat /etc/timezone)"
 wine --version
 
