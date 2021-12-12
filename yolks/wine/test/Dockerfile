@@ -7,9 +7,9 @@ LABEL   author="Dave Mol" maintainer="dave@digimol.net"
 
 ## install required packages
 RUN     dpkg --add-architecture i386
-
-RUN     apt update
-RUN     apt install wine64 -y
+RUN     apt-add-repository contrib
+RUN     apt update -y && apt upgrade -y
+RUN     apt install --install-recommends wine wine64 -y
 
 USER    container
 WORKDIR	/home/container
