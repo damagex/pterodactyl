@@ -19,7 +19,6 @@ RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullsey
 #RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
 RUN     apt update
 RUN     apt install --install-recommends winehq-devel cabextract -y
-RUN     apt install --install-recommends libestr0 libisc-export1100 libusb-0.1-4 libmpdec2 libgeoip1 libklibc libpolkit-backend-1-0 libnewt0.52 liblocale-gettext-perl libisc1100 -y
 RUN     apt install --install-recommends -y python3-httplib2 libmagic-mgc libmagic1 libperl5.28 libnetfilter-conntrack3
 RUN     apt install --install-recommends -y libuchardet0 libip6tc0 libtext-wrapi18n-perl libnftnl11 libfastjson4 libnfnetlink0 libfuse2 libbind9-161 klibc-utils
 RUN     apt install --install-recommends -y python3-urllib3 libisccfg163 libapt-inst2.0 libefiboot1 libtext-iconv-perl liblockfile-bin
