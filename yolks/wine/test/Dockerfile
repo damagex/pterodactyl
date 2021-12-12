@@ -48,6 +48,15 @@ RUN     apt install -y libidn11
 RUN     apt install -y libtext-charwidth-perl
 RUN     apt install -y libdiscover2
 RUN     apt install -y liblognorm5
+RUN     apt install -y libmagic-mgc
+RUN     apt install -y bzip2
+RUN     apt install -y dictionaries-common
+RUN     apt install -y gettext-base
+RUN     apt install -y discover
+RUN     apt install -y ispell
+RUN     apt install -y apparmor
+RUN     apt install -y whiptail
+RUN     apt install -y libmagic1
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
