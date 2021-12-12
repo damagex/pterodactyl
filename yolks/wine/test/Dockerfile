@@ -43,7 +43,6 @@ RUN    apt install -y libefivar1
 RUN    apt install -y libidn11
 RUN    apt install -y libtext-charwidth-perl
 RUN    apt install -y libdiscover2
-RUN    apt install -y libip4tc0
 RUN    apt install -y liblognorm5
 RUN    apt install -y libjson-c3
 RUN    apt install -y libestr0
