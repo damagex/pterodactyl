@@ -10,14 +10,6 @@ RUN          useradd -m -d /home/container -s /bin/bash container
 RUN          ln -s /home/container/ /nonexistent
 
 ENV          USER=container HOME=/home/container
-
-## Update base packages
-RUN          apt update \
-             && apt upgrade -y
-	     
-## Configure locale
-RUN          update-locale lang=en_US.UTF-8 \
-             && dpkg-reconfigure --frontend noninteractive locales
 			 
 WORKDIR     /home/container
 
