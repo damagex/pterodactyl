@@ -20,7 +20,6 @@ RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullsey
 RUN     apt update
 RUN     apt install -y winehq-devel cabextract
 RUN     apt install -y libestr0
-RUN     apt install -y libmpdec2
 RUN     apt install -y libgeoip1
 RUN     apt install -y libklibc
 RUN     apt install -y libpolkit-backend-1-0
