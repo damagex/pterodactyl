@@ -22,7 +22,6 @@ RUN     apt install --install-recommends winehq-devel cabextract -y
 RUN    apt install -y python3-httplib2
 RUN    apt install -y libmagic-mgc
 RUN    apt install -y libmagic1
-RUN    apt install -y libperl5.28
 RUN    apt install -y libnetfilter-conntrack3
 RUN    apt install -y libuchardet0
 RUN    apt install -y libip6tc0
