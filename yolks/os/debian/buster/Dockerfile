@@ -1,4 +1,4 @@
-FROM         debian:buster
+FROM         debian:10
 
 LABEL        author="Dave Mol" maintainer="dave@digimol.net"
 
@@ -17,8 +17,11 @@ ENV          USER=container HOME=/home/container
 RUN          apt update \
              && apt upgrade -y
 
+RUN	     apt install -y build-essential
+RUN	     apt install -y manpages-dev
+	     
 ## Install dependencies
-RUN          apt install -y gcc g++ libgcc1 libc++-dev gdb libc6 git wget curl tar zip unzip binutils xz-utils liblzo2-2 cabextract iproute2 net-tools netcat telnet libatomic1 libsdl1.2debian libsdl2-2.0-0 \
+RUN          apt install -y gcc g++ libgcc-8-dev libc++-dev gdb libc6 git wget curl tar zip unzip binutils xz-utils liblzo2-2 cabextract iproute2 net-tools netcat telnet libatomic1 libsdl1.2debian libsdl2-2.0-0 \
              libfontconfig1 icu-devtools libunwind8 libssl-dev sqlite3 libsqlite3-dev libmariadb-dev-compat locales ffmpeg gnupg2 apt-transport-https software-properties-common ca-certificates \
              zlib1g-dev rapidjson-dev tzdata libevent-dev
 
