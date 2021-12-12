@@ -1,4 +1,4 @@
-FROM         debian:buster-lite
+FROM         debian:buster-slim
 
 LABEL        author="Dave Mol" maintainer="dave@digimol.net"
 
