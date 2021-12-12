@@ -19,58 +19,29 @@ RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullsey
 #RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
 RUN     apt update
 RUN     apt install -y winehq-devel cabextract
-RUN     apt install -y libestr0
-RUN     apt install -y libgeoip1
-RUN     apt install -y libklibc
-RUN     apt install -y liblocale-gettext-perl
-RUN     apt install -y python3-httplib2
-RUN     apt install -y libmagic-mgc
-RUN     apt install -y libmagic1
-RUN     apt install -y libnetfilter-conntrack3
-RUN     apt install -y libuchardet0
-RUN     apt install -y libtext-wrapi18n-perl
-RUN     apt install -y libnftnl11
-RUN     apt install -y libfastjson4
-RUN     apt install -y libnfnetlink0
-RUN     apt install -y libfuse2
-RUN     apt install -y libbind9-161
-RUN     apt install -y klibc-utils
-RUN     apt install -y python3-urllib3
-RUN     apt install -y libisccfg163
-RUN     apt install -y libefiboot1
-RUN     apt install -y libtext-iconv-perl
-RUN     apt install -y liblockfile-bin
-RUN     apt install -y liblwres161
-RUN     apt install -y libpipeline1
-RUN     apt install -y libiptc0
-RUN     apt install -y libefivar1
-RUN     apt install -y libidn11
-RUN     apt install -y libtext-charwidth-perl
-RUN     apt install -y libdiscover2
-RUN     apt install -y liblognorm5
-RUN     apt install -y libmagic-mgc
-RUN     apt install -y bzip2
-RUN     apt install -y dictionaries-common
-RUN     apt install -y gettext-base
-RUN     apt install -y discover
-RUN     apt install -y ispell
-RUN     apt install -y apparmor
-RUN     apt install -y whiptail
-RUN     apt install -y libmagic1
+RUN     apt install -y cpio
+RUN     apt install -y file
+RUN     apt install -y netcat-traditional
+RUN     apt install -y os-prober
+RUN     apt install -y busybox
+RUN     apt install -y python3-idna
+RUN     apt install -y lsof
+RUN     apt install -y libprocps7
+RUN     apt install -y hdparm
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 RUN     chmod +x /usr/sbin/winetricks
 
 ENV     HOME=/home/container
-ENV     WINEPREFIX=/home/container/.wine
+ENV     WINEPREFIX=/home/container/.wine64
 ENV     WINEDLLOVERRIDES="mscoree,mshtml="
 ENV     DISPLAY=:0
 ENV     DISPLAY_WIDTH=1024
 ENV     DISPLAY_HEIGHT=768
 ENV     DISPLAY_DEPTH=16
 ENV     AUTO_UPDATE=1
-ENV     XVFB=1
+ENV     XVFB=0
 
 USER    container
 WORKDIR	/home/container
