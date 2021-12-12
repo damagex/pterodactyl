@@ -10,7 +10,7 @@ on:
       - os/debian/**
 jobs:
   push:
-    name: "yolks:debian:${{ matrix.os }}"
+    name: "yolks:debian-${{ matrix.os }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -35,4 +35,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/damagex/yolks:debian:${{ matrix.os }}
+            ghcr.io/damagex/yolks:debian-${{ matrix.os }}
