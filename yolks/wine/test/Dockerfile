@@ -41,21 +41,18 @@ RUN    apt install -y libpipeline1
 RUN    apt install -y libiptc0
 RUN    apt install -y libefivar1
 RUN    apt install -y libidn11
-RUN    apt install -y libdns1104
 RUN    apt install -y libtext-charwidth-perl
 RUN    apt install -y libprocps7
 RUN    apt install -y libdiscover2
 RUN    apt install -y libip4tc0
 RUN    apt install -y liblognorm5
 RUN    apt install -y libjson-c3
-RUN    apt install -y libisccc161
 RUN    apt install -y libestr0
 RUN    apt install -y libmpdec2
 RUN    apt install -y libgeoip1
 RUN    apt install -y libklibc
 RUN    apt install -y libpolkit-backend-1-0
 RUN    apt install -y liblocale-gettext-perl
-RUN    apt install -y libisc1100
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
