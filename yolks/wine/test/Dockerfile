@@ -26,8 +26,6 @@ RUN     apt install -y os-prober
 RUN     apt install -y busybox
 RUN     apt install -y python3-idna
 RUN     apt install -y lsof
-RUN     apt install -y libprocps7
-RUN     apt install -y hdparm
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
