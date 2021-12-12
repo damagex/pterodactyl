@@ -51,7 +51,6 @@ RUN    apt install -y liblognorm5
 RUN    apt install -y libjson-c3
 RUN    apt install -y libisccc161
 RUN    apt install -y libestr0
-RUN    apt install -y libisc-export1100
 RUN    apt install -y libmpdec2
 RUN    apt install -y libgeoip1
 RUN    apt install -y libklibc
