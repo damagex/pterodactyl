@@ -16,6 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         os:
+          - bullseye
           - buster
     steps:
       - uses: actions/checkout@v2
