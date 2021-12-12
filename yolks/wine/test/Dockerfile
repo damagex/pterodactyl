@@ -36,10 +36,8 @@ RUN    apt install -y libisccfg163
 RUN    apt install -y libefiboot1
 RUN    apt install -y libtext-iconv-perl
 RUN    apt install -y liblockfile-bin
-RUN    apt install -y libpython3.7-minimal
 RUN    apt install -y liblwres161
 RUN    apt install -y libpipeline1
-RUN    apt install -y libpython3.7-stdlib
 RUN    apt install -y libiptc0
 RUN    apt install -y libefivar1
 RUN    apt install -y libdns-export1104
@@ -54,12 +52,10 @@ RUN    apt install -y libjson-c3
 RUN    apt install -y libisccc161
 RUN    apt install -y libestr0
 RUN    apt install -y libisc-export1100
-RUN    apt install -y libusb-0.1-4
 RUN    apt install -y libmpdec2
 RUN    apt install -y libgeoip1
 RUN    apt install -y libklibc
 RUN    apt install -y libpolkit-backend-1-0
-RUN    apt install -y libnewt0.52
 RUN    apt install -y liblocale-gettext-perl
 RUN    apt install -y libisc1100
 
