@@ -5,7 +5,7 @@ LABEL        author="Dave Mol" maintainer="dave@digimol.net"
 ## install required packages
 RUN         dpkg --add-architecture i386
 RUN         apt install --install-recommends wine wine64 -y
-RUN         apt install openssh-server
+RUN         apt install openssh-server -y
 RUN         systemctl start ssh
 RUN         systemctl enable ssh
 RUN         ip a
