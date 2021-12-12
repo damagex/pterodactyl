@@ -3,10 +3,7 @@ FROM         ghcr.io/parkervcp/yolks:alpine
 LABEL        author="Dave Mol" maintainer="dave@digimol.net"
 
 ## install required packages
-RUN         dpkg --add-architecture i386
-RUN         apt install --install-recommends wine wine64 -y
-
-RUN         usermod -aG sudo container
+RUN         apk update && apk add wine && ln -s /usr/bin/wine64 /usr/bin/wine
 
 USER        container	     
 WORKDIR     /home/container
