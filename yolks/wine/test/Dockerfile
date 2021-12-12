@@ -40,7 +40,6 @@ RUN    apt install -y liblwres161
 RUN    apt install -y libpipeline1
 RUN    apt install -y libiptc0
 RUN    apt install -y libefivar1
-RUN    apt install -y libdns-export1104
 RUN    apt install -y libidn11
 RUN    apt install -y libdns1104
 RUN    apt install -y libtext-charwidth-perl
