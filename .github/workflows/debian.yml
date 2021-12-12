@@ -31,7 +31,7 @@ jobs:
       - uses: docker/build-push-action@v2
         with:
           context: ./yolks/os/debian/${{ matrix.os }}
-          file: ./yolks/os/debian/{{ matrix.os }}/Dockerfile
+          file: ./yolks/os/debian/${{ matrix.os }}/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
