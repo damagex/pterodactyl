@@ -33,7 +33,6 @@ RUN    apt install -y libbind9-161
 RUN    apt install -y klibc-utils
 RUN    apt install -y python3-urllib3
 RUN    apt install -y libisccfg163
-RUN    apt install -y libapt-inst2.0
 RUN    apt install -y libefiboot1
 RUN    apt install -y libtext-iconv-perl
 RUN    apt install -y liblockfile-bin
