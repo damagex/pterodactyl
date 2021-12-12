@@ -22,7 +22,6 @@ RUN     apt install -y winehq-devel cabextract
 RUN     apt install -y libestr0
 RUN     apt install -y libgeoip1
 RUN     apt install -y libklibc
-RUN     apt install -y libpolkit-backend-1-0
 RUN     apt install -y liblocale-gettext-perl
 RUN     apt install -y python3-httplib2
 RUN     apt install -y libmagic-mgc
