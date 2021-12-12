@@ -1,7 +1,7 @@
 # ----------------------------------
 # Generic Wine 6 image
 # ----------------------------------
-FROM    ghcr.io/damagex/yolks:debian:buster
+FROM    ghcr.io/damagex/yolks:debian-buster
 
 LABEL   author="Dave Mol" maintainer="dave@digimol.net"
 
