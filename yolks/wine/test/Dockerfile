@@ -1,4 +1,4 @@
-FROM         ghcr.io/damagex/yolks:debian-bullseye
+FROM         ghcr.io/parkervcp/yolks:alpine
 
 LABEL        author="Dave Mol" maintainer="dave@digimol.net"
 
