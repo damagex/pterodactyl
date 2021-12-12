@@ -7,8 +7,6 @@ LABEL   author="Dave Mol" maintainer="dave@digimol.net"
 
 ## install required packages
 RUN     dpkg --add-architecture i386
-RUN     apt update
-RUN     apt install -y --no-install-recommends gnupg2 software-properties-common libntlm0 winbind xvfb xauth python3 libncurses5:i386 libncurses6:i386 libgdiplus
 
 RUN     apt update
 RUN     apt install wine64 -y
