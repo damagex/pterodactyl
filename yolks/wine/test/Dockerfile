@@ -48,8 +48,6 @@ RUN     apt install -y libidn11
 RUN     apt install -y libtext-charwidth-perl
 RUN     apt install -y libdiscover2
 RUN     apt install -y liblognorm5
-RUN     apt install -y libjson-c3
-
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
