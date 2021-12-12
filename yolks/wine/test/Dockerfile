@@ -1,7 +1,7 @@
 # ----------------------------------
 # Generic Wine 6 image
 # ----------------------------------
-FROM    ghcr.io/parkervcp/yolks:debian
+FROM    ghcr.io/parkervcp/yolks:ubuntu
 
 LABEL   author="Dave Mol" maintainer="dave@digimol.net"
 
