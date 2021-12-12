@@ -19,11 +19,52 @@ RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullsey
 #RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
 RUN     apt update
 RUN     apt install --install-recommends winehq-devel cabextract -y
-RUN     apt install --install-recommends -y python3-httplib2 libmagic-mgc libmagic1 libperl5.28 libnetfilter-conntrack3
-RUN     apt install --install-recommends -y libuchardet0 libip6tc0 libtext-wrapi18n-perl libnftnl11 libfastjson4 libnfnetlink0 libfuse2 libbind9-161 klibc-utils
-RUN     apt install --install-recommends -y python3-urllib3 libisccfg163 libapt-inst2.0 libefiboot1 libtext-iconv-perl liblockfile-bin
-RUN     apt install --install-recommends -y libpython3.7-minimal liblwres161 libpipeline1 libpython3.7-stdlib libiptc0 libefivar1 libdns-export1104
-RUN     apt install --install-recommends -y libidn11 libdns1104 libtext-charwidth-perl libprocps7 libdiscover2 libip4tc0 liblognorm5 libjson-c3 libisccc161
+RUN    apt install -y python3-httplib2
+RUN    apt install -y libmagic-mgc
+RUN    apt install -y libmagic1
+RUN    apt install -y libperl5.28
+RUN    apt install -y libnetfilter-conntrack3
+RUN    apt install -y libuchardet0
+RUN    apt install -y libip6tc0
+RUN    apt install -y libtext-wrapi18n-perl
+RUN    apt install -y libnftnl11
+RUN    apt install -y libfastjson4
+RUN    apt install -y libnfnetlink0
+RUN    apt install -y libfuse2
+RUN    apt install -y libbind9-161
+RUN    apt install -y klibc-utils
+RUN    apt install -y python3-urllib3
+RUN    apt install -y libisccfg163
+RUN    apt install -y libapt-inst2.0
+RUN    apt install -y libefiboot1
+RUN    apt install -y libtext-iconv-perl
+RUN    apt install -y liblockfile-bin
+RUN    apt install -y libpython3.7-minimal
+RUN    apt install -y liblwres161
+RUN    apt install -y libpipeline1
+RUN    apt install -y libpython3.7-stdlib
+RUN    apt install -y libiptc0
+RUN    apt install -y libefivar1
+RUN    apt install -y libdns-export1104
+RUN    apt install -y libidn11
+RUN    apt install -y libdns1104
+RUN    apt install -y libtext-charwidth-perl
+RUN    apt install -y libprocps7
+RUN    apt install -y libdiscover2
+RUN    apt install -y libip4tc0
+RUN    apt install -y liblognorm5
+RUN    apt install -y libjson-c3
+RUN    apt install -y libisccc161
+RUN    apt install -y libestr0
+RUN    apt install -y libisc-export1100
+RUN    apt install -y libusb-0.1-4
+RUN    apt install -y libmpdec2
+RUN    apt install -y libgeoip1
+RUN    apt install -y libklibc
+RUN    apt install -y libpolkit-backend-1-0
+RUN    apt install -y libnewt0.52
+RUN    apt install -y liblocale-gettext-perl
+RUN    apt install -y libisc1100
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
