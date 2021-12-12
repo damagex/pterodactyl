@@ -42,7 +42,6 @@ RUN    apt install -y libiptc0
 RUN    apt install -y libefivar1
 RUN    apt install -y libidn11
 RUN    apt install -y libtext-charwidth-perl
-RUN    apt install -y libprocps7
 RUN    apt install -y libdiscover2
 RUN    apt install -y libip4tc0
 RUN    apt install -y liblognorm5
