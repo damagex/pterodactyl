@@ -35,7 +35,7 @@ fi
 # Install necessary to run packages
 echo "First launch will throw some errors. Ignore them"
 
-mkdir -p $WINEPREFIX
+mkdir -p /home/container/.wine64
 
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
