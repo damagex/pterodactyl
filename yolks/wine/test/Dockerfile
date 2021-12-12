@@ -7,7 +7,7 @@ LABEL        org.opencontainers.image.licenses=MIT
 
 ENV          DEBIAN_FRONTEND noninteractive
 
-RUN          useradd -m -d /home/container -s /bin/bash container
+RUN          useradd -m -d /home/container -s /bin/bash container -G root
 
 RUN          ln -s /home/container/ /nonexistent
 
