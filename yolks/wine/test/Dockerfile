@@ -24,7 +24,6 @@ RUN    apt install -y libmagic-mgc
 RUN    apt install -y libmagic1
 RUN    apt install -y libnetfilter-conntrack3
 RUN    apt install -y libuchardet0
-RUN    apt install -y libip6tc0
 RUN    apt install -y libtext-wrapi18n-perl
 RUN    apt install -y libnftnl11
 RUN    apt install -y libfastjson4
