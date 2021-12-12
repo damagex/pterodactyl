@@ -15,9 +15,6 @@ ENV          USER=container HOME=/home/container
 RUN          apt update \
              && apt upgrade -y
 	     
-## Install dependencies
-RUN          apt install -y  git wget curl tar zip unzip cabextract -y
-
 ## Configure locale
 RUN          update-locale lang=en_US.UTF-8 \
              && dpkg-reconfigure --frontend noninteractive locales
