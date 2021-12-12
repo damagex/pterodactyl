@@ -31,8 +31,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - uses: docker/build-push-action@v2
         with:
-          context: .yolks/wine
-          file: .yolks/wine/${{ matrix.tag }}/Dockerfile
+          context: ./yolks/wine
+          file: ./yolks/wine/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
